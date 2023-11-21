@@ -1,0 +1,42 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="image" src="https://banner2.cleanpng.com/20171128/313/thanksgiving-pumpkin-decoration-png-clipart-5a1d64ea7bbb78.3761979015118758185068.jpg" width="200" height="200">
+
+<button id="changeBtn" onclick="changeImage()">Change Image</button>
+
+<style>
+    #image, button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+
+</style>
+<script>
+function changeImage() {
+  var image = document.getElementById('image');
+  var btn = document.getElementById('changeBtn');
+  if (image.src.match("https://banner2.cleanpng.com/20171128/313/thanksgiving-pumpkin-decoration-png-clipart-5a1d64ea7bbb78.3761979015118758185068.jpg")) {
+    image.src = "https://banner2.cleanpng.com/20171128/5f7/decorated-christmas-tree-transparent-png-clip-art-image-5a1cfba22fabb1.5048363215118488661953.jpg";
+    btn.innerHTML = "Revert Image";
+  } else {
+    image.src = "https://banner2.cleanpng.com/20171128/313/thanksgiving-pumpkin-decoration-png-clipart-5a1d64ea7bbb78.3761979015118758185068.jpg";
+    btn.innerHTML = "Change Image";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
